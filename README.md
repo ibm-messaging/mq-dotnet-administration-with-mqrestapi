@@ -1,4 +1,5 @@
 # mq-dotnet-administration-with-mqrestapi 
+
 ## Invoke IBM MQ REST API's using .NET application
 
 IBM MQ Administration can be done programmatically using PCF.PCF is supported only with the Java and C client's of IBM MQ.
@@ -27,6 +28,22 @@ Following are the parameters that have to be passed to the 'MQDnetQueueAdminRest
 -certDetails : certificate keydatabase along with password separated with '|'
 -verb : REST API VERB(GET/POST)
 -userCredentials: User credentials , username followed with password separated with ':'
+```
+
+### How to compile the application
+
+The applications can be built using [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.100-windows-x64-binaries)
+
+The "dotnet build" command can be used to compile the application.
+
+For MQDnetChannelAdminRestAPI program
+```
+dotnet.exe build MQDnetChannelAdminRestAPI.csproj
+```
+
+For MQDnetQueueAdminRestAPI program
+```
+dotnet.exe build MQDnetQueueAdminRestAPI.csproj
 ```
 
 ### How to run the application
@@ -210,7 +227,6 @@ StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.Http
 ###
 Follow the below links for setting up the IBM MQ Webserver
 
-Configuring REST API: https://www.ibm.com/docs/en/ibm-mq/9.2?topic=configuring-mq-console-rest-api
-HTTP Basic Authentication : https://www.ibm.com/docs/en/ibm-mq/9.2?topic=security-using-http-basic-authentication-rest-api
-Security: https://www.ibm.com/docs/en/ibm-mq/9.2?topic=securing-mq-console-rest-api-security
-
+* Configuring REST API: https://www.ibm.com/docs/en/ibm-mq/9.2?topic=configuring-mq-console-rest-api
+* HTTP Basic Authentication : https://www.ibm.com/docs/en/ibm-mq/9.2?topic=security-using-http-basic-authentication-rest-api
+* Security: https://www.ibm.com/docs/en/ibm-mq/9.2?topic=securing-mq-console-rest-api-security
