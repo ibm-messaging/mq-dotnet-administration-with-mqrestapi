@@ -1,4 +1,4 @@
-# mq-dotnet-administration-with-MQRestAPI
+# mq-dotnet-administration-with-mqrestapi 
 ## Invoke IBM MQ REST API's using .NET application
 
 IBM MQ Administration can be done programmatically using PCF.PCF is supported only with the Java and C client's of IBM MQ.
